@@ -10,8 +10,7 @@ var contact='';
 var c;
 var regnum=0;
 name="";
-var commands={
-	
+var commands={	
 "help":"<br>help - To get help commands<br>date - To get event date<br>location - To get venue of the event<br>map - To get map of the location<br>fee - To get registration fees<br>rules - To get basic rules<br>register - To register<br>perks - Prize money and other offers<br>contact - Details to contact us<br>sponsor - To get sponsor details<br><br>",
 "date":"<br>Date : 12th to 13th December 2015<br><br>",
 "location":"<br>Location : IFIM Business School, Bangalore<br><br>",
@@ -29,7 +28,6 @@ var option='n';
 function formvalidate()
 {
 	var ferr=1;
-
 	var charRegExp = /^[a-zA-Z .]+$/;
 	if($("#rname").val()=="" || $("#rname").val().search(charRegExp)!=0 )
 		ferr=0;
